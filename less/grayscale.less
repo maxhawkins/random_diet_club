@@ -129,12 +129,17 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
+    background: url(../img/kale.jpg) no-repeat bottom center scroll;
+    background-color: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    img {
+      -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    }
+
     .intro-body {
         display: table-cell;
         vertical-align: middle;
@@ -240,7 +245,6 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;

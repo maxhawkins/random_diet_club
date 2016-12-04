@@ -256,6 +256,9 @@ a:focus {
     height: 400px;
     margin-top: 250px;
   }
+  #contact {
+    padding: 50px;
+  }
 }
 .btn {
   text-transform: uppercase;
@@ -288,6 +291,17 @@ a:focus {
 .btn-secondary.btn-secondary-join {
   background-color: orange;
   height: 45px;
+}
+.email-display {
+  margin-top: 80px;
+}
+.food-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+.food-img-wrapper img {
+  position: relative;
+  bottom: 250px;
 }
 ul.banner-social-buttons {
   margin-top: 0;

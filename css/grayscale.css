@@ -311,6 +311,22 @@ a:focus {
 .checkmark {
   height: 70px;
 }
+table {
+  background-color: white;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0)));
+}
+table thead tr {
+  background-color: darkgray;
+}
+table tr.email-row {
+  font-weight: bold;
+}
+table tr.email-row td.email-checkbox {
+  text-align: center;
+}
+table tr.email-row td.date {
+  text-align: center;
+}
 ul.banner-social-buttons {
   margin-top: 0;
 }

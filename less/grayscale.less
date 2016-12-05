@@ -354,6 +354,32 @@ a {
   height: 70px;
 }
 
+table {
+
+    background-color: white;
+    // TODO: Find a better way to apply transparency gradient
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+  thead {
+    tr {
+      background-color: darkgray;
+    }
+  }
+
+  tr.email-row {
+    font-weight: bold;
+
+    td.email-checkbox {
+      text-align: center;
+    }
+
+    td.date {
+      text-align: center;
+    }
+
+  }
+}
+
 ul.banner-social-buttons {
     margin-top: 0;
     @media(max-width:1199px) {

@@ -303,6 +303,14 @@ a:focus {
   position: relative;
   bottom: 250px;
 }
+.checkmark-wrapper {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.checkmark {
+  height: 70px;
+}
 ul.banner-social-buttons {
   margin-top: 0;
 }

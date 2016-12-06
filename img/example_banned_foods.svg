@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="example_banned_foods.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="184.38469"
+     inkscape:cy="819.86823"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     showborder="true"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3405" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:none"
+       id="path3368"
+       sodipodi:sides="6"
+       sodipodi:cx="330.31989"
+       sodipodi:cy="149.28583"
+       sodipodi:r1="247.47707"
+       sodipodi:r2="214.32143"
+       sodipodi:arg1="0.7334219"
+       sodipodi:arg2="1.2570207"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 514.16765,314.95085 278.77365,391.33517 94.92589,225.67015 146.47212,-16.37919 381.86612,-92.763515 565.71388,72.901503 Z" />
+    <path
+       sodipodi:type="star"
+       style="fill:none"
+       id="path3370"
+       sodipodi:sides="6"
+       sodipodi:cx="284.86301"
+       sodipodi:cy="216.96605"
+       sodipodi:r1="95.474113"
+       sodipodi:r2="82.683006"
+       sodipodi:arg1="0.52045845"
+       sodipodi:arg2="1.0440572"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 367.69552,264.44322 -82.53269,47.99647 -82.83251,-47.47717 -0.29982,-95.47364 82.53269,-47.99647 82.83251,47.47717 z" />
+    <path
+       sodipodi:type="star"
+       style="fill:#4b8d67;fill-opacity:1"
+       id="path3372"
+       sodipodi:sides="6"
+       sodipodi:cx="361.63461"
+       sodipodi:cy="-148.27567"
+       sodipodi:r1="97.588264"
+       sodipodi:r2="84.513916"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 446.14853,-99.481533 -84.51392,48.794132 -84.51391,-48.794132 0,-97.588267 84.51391,-48.79413 84.51392,48.79413 z"
+       transform="scale(1,-1)" />
+    <path
+       transform="scale(1,-1)"
+       d="m 354.22467,-261.10592 -84.51392,48.79413 -84.51391,-48.79413 0,-97.58827 84.51391,-48.79413 84.51392,48.79413 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.0471976"
+       sodipodi:arg1="0.52359878"
+       sodipodi:r2="84.513916"
+       sodipodi:r1="97.588264"
+       sodipodi:cy="-309.90007"
+       sodipodi:cx="269.71074"
+       sodipodi:sides="6"
+       id="path3429"
+       style="fill:#828282;fill-opacity:1"
+       sodipodi:type="star" />
+    <path
+       sodipodi:type="star"
+       style="fill:#8acca5;fill-opacity:1"
+       id="path3431"
+       sodipodi:sides="6"
+       sodipodi:cx="456.62955"
+       sodipodi:cy="-310.91022"
+       sodipodi:r1="97.588264"
+       sodipodi:r2="84.513916"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 541.14346,-262.11608 -84.51391,48.79413 -84.51392,-48.79414 0,-97.58826 84.51392,-48.79413 84.51391,48.79413 z"
+       transform="scale(1,-1)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="361.91455"
+       y="139.20462"
+       id="text3433"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3435"
+         x="361.91455"
+         y="139.20462"
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">NO</tspan><tspan
+         sodipodi:role="line"
+         x="361.91455"
+         y="176.70462"
+         id="tspan3437"
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">COFFEE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="267.25165"
+       y="299.79855"
+       id="text4261"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4263"
+         x="267.25165"
+         y="299.79855"
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">NO</tspan><tspan
+         sodipodi:role="line"
+         x="267.25165"
+         y="337.29855"
+         id="tspan4265"
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">HALIBUT</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4289"
+       y="281.59549"
+       x="459.18063"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         y="281.59549"
+         x="459.18063"
+         id="tspan4291"
+         sodipodi:role="line">NO</tspan><tspan
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         id="tspan4293"
+         y="319.09549"
+         x="459.18063"
+         sodipodi:role="line">PEANUT</tspan><tspan
+         style="font-size:30px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         y="356.59549"
+         x="459.18063"
+         sodipodi:role="line"
+         id="tspan4295">BUTTER</tspan></text>
+  </g>
+</svg>

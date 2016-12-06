@@ -302,13 +302,20 @@ a:focus {
 .food-img-wrapper img {
   position: relative;
   bottom: 250px;
+  width: 100%;
 }
-.checkmark-wrapper {
+.checkmark-wrapper-wrapper {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.checkmark-wrapper-wrapper .checkmark-wrapper {
   font-size: 34px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.checkmark {
+.checkmark-wrapper-wrapper .checkmark-wrapper .checkmark {
   height: 70px;
 }
 table {

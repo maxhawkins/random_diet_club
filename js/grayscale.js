@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
@@ -27,159 +21,126 @@ $(function() {
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $(this).closest('.collapse').collapse('toggle');
-});
+// module aliases
+var Engine = Matter.Engine,
+    World = Matter.World,
+    Bodies = Matter.Bodies,
+    Body = Matter.Body,
+    Vector = Matter.Vector,
+    Composite = Matter.Composite;
 
-// Google Maps Scripts
-var map = null;
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
-});
+// create an engine
+var engine = Engine.create();
 
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+var bodies = [];
+var images = [];
 
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+var particles = document.getElementById('particles');
 
-        // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
+var SRCS = [
+    'img/basil.png',
+    'img/eggplant.png',
+    'img/cabbage.png',
+    'img/cabbage2.png',
+    'img/salad.png',
+    'img/cucumber.png',
+    'img/apple.png',
+    'img/grape.png',
+];
 
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-        }]
-    };
+for (var i = 0; i < 20; i++) {
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    var body = Bodies.rectangle(-300 * 50, 1200 * 50, 100, 100, {friction: 0, frictionAir: 0.008});
+    bodies.push(body);
 
-    // Create the Google Map using out element and options defined above
-    map = new google.maps.Map(mapElement, mapOptions);
+    var scale = 0.8 + (Math.random() - 0.5) * 0.3;
+    var width = 200 * scale;
 
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image
-    });
+    var srcIdx = Math.floor(Math.random() * SRCS.length);
+    var src = SRCS[srcIdx];
+
+    var image = document.createElement('img');
+    image.className = 'particle'
+    image.src = src;
+    image.style.position = 'absolute';
+    image.style.left = 0;
+    image.style.top = 0;
+    image.style.width = width + 'px';
+    image.style.transform = 'translate(-9999, -9999)';
+    particles.appendChild(image);
+    images.push(image);
 }
+
+engine.world.gravity.y = 0;
+World.add(engine.world, bodies);
+
+
+Engine.run(engine);
+
+function update(t) {
+    var bodies = Composite.allBodies(engine.world);
+
+    for (var i = 0; i < bodies.length; i++) {
+        var body = bodies[i];
+        var image = images[i];
+
+        var x = (body.position.x / 50);
+        var y = (body.position.y / 50);
+
+        var tran = 'translate(' + x + 'px, ' + y + 'px) ' +
+            'rotate(' + body.angle + 'rad)';
+
+        image.style.transform = tran;
+    }
+
+
+    window.requestAnimationFrame(update);
+}
+
+window.requestAnimationFrame(update);
+
+
+function trigger() {
+    for (var i = 0; i < bodies.length; i++) {
+        var body = bodies[i];
+
+        var position = {
+            x: -300 * 50,
+            y: 1200 * 50,
+        }
+        var origin = {
+            x: position.x - 20,
+            y: position.y,
+        };
+        var force = {
+            x: (Math.sqrt(Math.random()) + 0.5) * 12,
+            y: (Math.random() - 0.5) * 15,
+        };
+
+        if (Math.random() > 0.5) {
+            position.x = (window.innerWidth + 300) * 50;
+            origin.x = position.x + 12;
+            force.x *= -1;
+        }
+
+        Body.setPosition(body, position);
+        Body.applyForce(body, origin, force);
+    }
+}
+
+var downloadSection = document.getElementById('download');
+
+var triggered = false;
+$(window).scroll(function() {
+    if (triggered) {
+        return;
+    }
+    var position = window.scrollY + window.innerHeight;
+    var triggerPoint = downloadSection.offsetTop;
+    if (position < triggerPoint || position > (triggerPoint + 600)) {
+        return
+    }
+    triggered = true;
+    setTimeout(trigger, 1000);
+});
+

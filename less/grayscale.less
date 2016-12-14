@@ -354,7 +354,13 @@ a {
   height: 60px;
   width: 250px;
   word-spacing: 3px;
-  font-size: 18px
+  font-size: 18px;
+  &:hover,
+  &:focus {
+    color: white;
+    outline: none;
+    background-color: darken(@primary, 10%);
+  }
 }
 
 .email-display {

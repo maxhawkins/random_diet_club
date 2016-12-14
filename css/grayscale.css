@@ -316,6 +316,12 @@ a:focus {
   word-spacing: 3px;
   font-size: 18px;
 }
+.btn-secondary.btn-secondary-join:hover,
+.btn-secondary.btn-secondary-join:focus {
+  color: white;
+  outline: none;
+  background-color: #6a1d12;
+}
 .email-display {
   font-family: arial, sans-serif;
   margin-top: 80px;

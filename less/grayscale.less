@@ -1,12 +1,16 @@
 @import "variables.less";
 @import "mixins.less";
 
+@nav-color: #9BBB34;
+@button-color: #313B11;
+@primary: #95291A;
+
 body {
     width: 100%;
     height: 100%;
     font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: black;
-    background-color: white;
+    background-color: #F9F5EC;
 }
 
 html {
@@ -55,11 +59,12 @@ a {
 }
 
 .navbar-custom {
+    min-height: 120px;
     margin-bottom: 0;
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: @nav-color;
     .navbar-toggle {
         color: white;
         background-color: fade(white, 20%);
@@ -70,6 +75,8 @@ a {
         }
     }
     .navbar-brand {
+        height: 100px;
+        padding-top: 30px;
         font-weight: 700;
         &:focus {
             outline: none;
@@ -79,6 +86,7 @@ a {
         color: white;
     }
     .nav {
+        padding-top: 10px;
         li {
             a {
                 -webkit-transition: background .3s ease-in-out;
@@ -115,8 +123,7 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            background: @nav-color;
 
             .btn-join {
               display: block;
@@ -133,7 +140,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(../img/kale.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(../img/hero.jpg) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -147,26 +154,37 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
+        padding-top: 140px;
         .brand-heading {
             font-size: 40px;
+            text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
         }
         .intro-text {
             font-size: 18px;
+            max-width: 500px;
+            margin: 20px auto 60px auto;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
         }
     }
 
     .input-group-email {
-      padding-left: 20%;
-      padding-right: 20%;
+      // padding-left: 20%;
+      // padding-right: 20%;
     }
 
     .input-email {
-      height: 45px;
+      width: 98%;
+      width: calc(100% - 5px);
+      height: 60px;
+      border-radius: 0;
+      font-size: 18px;
+      margin-right: 50px
     }
 
     @media(min-width:768px) {
         height: 100%;
         padding: 0;
+        min-height: 650px;
         .intro-body {
             .brand-heading {
                 font-size: 100px;
@@ -259,7 +277,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: black;
-    background-color: #E5E5E5;
+    background-color: #DFDCD4;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -316,18 +334,31 @@ a {
 
 .btn-join {
   display:none;
-  padding: 5px;
-  border-radius: 4px;
-  background-color: orange;
-  border-color: orange;
+  padding: 20px;
+  background: transparent;
+  border-color: @button-color;
+  border-width: 2px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: @button-color;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: @button-color;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 
 .btn-secondary.btn-secondary-join {
-  background-color: orange;
-  height: 45px;
+  background-color: @primary;
+  height: 60px;
+  width: 250px;
+  word-spacing: 3px;
+  font-size: 18px
 }
 
 .email-display {
+  font-family: arial, sans-serif;
   margin-top: 80px;
 }
 
@@ -352,10 +383,11 @@ a {
   .checkmark-wrapper {
     font-size: 34px;
     font-weight: bold;
+    line-height: 50px;
     margin-bottom: 20px;
 
     .checkmark {
-      height: 70px;
+      height: 50px;
     }
 
   }
@@ -370,7 +402,7 @@ table {
 
   thead {
     tr {
-      background-color: darkgray;
+      background-color: #CCC9C2;
     }
   }
 

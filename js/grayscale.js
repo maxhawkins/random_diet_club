@@ -36,6 +36,9 @@ var bodies = [];
 var images = [];
 
 var particles = document.getElementById('particles');
+var downloadSection = document.getElementById('download');
+
+var launchY = downloadSection.offsetTop;
 
 var SRCS = [
     'img/basil.png',
@@ -50,7 +53,7 @@ var SRCS = [
 
 for (var i = 0; i < 20; i++) {
 
-    var body = Bodies.rectangle(-300 * 50, 1200 * 50, 100, 100, {friction: 0, frictionAir: 0.008});
+    var body = Bodies.rectangle(-300 * 50, launchY * 50, 100, 100, {friction: 0, frictionAir: 0.008});
     bodies.push(body);
 
     var scale = 0.8 + (Math.random() - 0.5) * 0.3;
@@ -106,7 +109,7 @@ function trigger() {
 
         var position = {
             x: -300 * 50,
-            y: 1200 * 50,
+            y: launchY * 50,
         }
         var origin = {
             x: position.x - 20,
@@ -128,8 +131,6 @@ function trigger() {
     }
 }
 
-var downloadSection = document.getElementById('download');
-
 var triggered = false;
 $(window).scroll(function() {
     if (triggered) {
@@ -141,6 +142,6 @@ $(window).scroll(function() {
         return
     }
     triggered = true;
-    setTimeout(trigger, 1000);
+    trigger();
 });
 

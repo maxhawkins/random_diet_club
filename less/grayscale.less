@@ -368,16 +368,23 @@ a {
   margin-top: 80px;
 }
 
-.food-img-wrapper {
+.food-img {
 
   height: 200px;
-  overflow: hidden;
+  
+  background-color: #313B11;
+  background: url(../img/food.jpg) 42% -250px no-repeat;
+  background-size: cover;
 
-  img {
-      position: relative;
-      bottom: 250px;
-      width: 100%;
+  @media(max-width:767px) {
+    background-position: center;
   }
+
+  // img {
+  //     position: relative;
+  //     bottom: 250px;
+  //     width: 100%;
+  // }
 
 }
 .checkmark-wrapper-wrapper {

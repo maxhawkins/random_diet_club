@@ -56,8 +56,13 @@ for (var i = 0; i < 20; i++) {
     var body = Bodies.rectangle(-300 * 50, launchY * 50, 100, 100, {friction: 0, frictionAir: 0.008});
     bodies.push(body);
 
+    var maxWidth = 200;
+    if (document.body.offsetWidth < 500) {
+        maxWidth = 150;
+    }
+
     var scale = 0.8 + (Math.random() - 0.5) * 0.3;
-    var width = 200 * scale;
+    var width = maxWidth * scale;
 
     var srcIdx = Math.floor(Math.random() * SRCS.length);
     var src = SRCS[srcIdx];
@@ -107,6 +112,11 @@ function trigger() {
     for (var i = 0; i < bodies.length; i++) {
         var body = bodies[i];
 
+        var forceScale = 12;
+        if (document.body.offsetWidth < 500) {
+            forceScale = 3;
+        }
+
         var position = {
             x: -300 * 50,
             y: launchY * 50,
@@ -116,8 +126,8 @@ function trigger() {
             y: position.y,
         };
         var force = {
-            x: (Math.sqrt(Math.random()) + 0.5) * 12,
-            y: (Math.random() - 0.5) * 15,
+            x: (Math.sqrt(Math.random()) + 0.5) * forceScale,
+            y: (Math.random() - 0.5) * (forceScale + 3),
         };
 
         if (Math.random() > 0.5) {

@@ -88,6 +88,7 @@ Engine.run(engine);
 function update(t) {
     var bodies = Composite.allBodies(engine.world);
 
+    var sleepingCount = 0;
     for (var i = 0; i < bodies.length; i++) {
         var body = bodies[i];
         var image = images[i];
@@ -99,6 +100,14 @@ function update(t) {
             'rotate(' + body.angle + 'rad)';
 
         image.style.transform = tran;
+
+        if (body.speed < 0.01 && body.angularSpeed < 0.01) {
+            sleepingCount++;
+        }
+    }
+
+    if (triggered && sleepingCount == bodies.length) {
+        return; // stop animating after everything comes to a rest
     }
 
 
@@ -112,7 +121,7 @@ function trigger() {
     for (var i = 0; i < bodies.length; i++) {
         var body = bodies[i];
 
-        var forceScale = 12;
+        var forceScale = 11;
         if (document.body.offsetWidth < 500) {
             forceScale = 3;
         }

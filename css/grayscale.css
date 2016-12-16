@@ -145,7 +145,7 @@ a:focus {
   padding-top: 140px;
 }
 .intro .intro-body .brand-heading {
-  font-size: 40px;
+  font-size: 60px;
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 .intro .intro-body .intro-text {
@@ -161,6 +161,18 @@ a:focus {
   border-radius: 0;
   font-size: 18px;
   margin-right: 50px;
+}
+@media (max-width: 500px) {
+  .intro .input-group-email {
+    display: block;
+  }
+  .intro .input-email {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .intro .btn-secondary.btn-secondary-join {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .intro {
@@ -325,6 +337,8 @@ a:focus {
 .email-display {
   font-family: arial, sans-serif;
   margin-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .food-img {
   height: 200px;
@@ -342,6 +356,7 @@ a:focus {
   height: auto;
   margin: 0 auto;
   position: relative;
+  margin-top: 40px;
 }
 .checkmark-wrapper-wrapper .checkmark-wrapper {
   font-size: 34px;
@@ -351,6 +366,15 @@ a:focus {
 }
 .checkmark-wrapper-wrapper .checkmark-wrapper .checkmark {
   height: 50px;
+}
+@media (max-width: 500px) {
+  .checkmark-wrapper-wrapper .checkmark-wrapper {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .checkmark-wrapper-wrapper .checkmark-wrapper .checkmark {
+    height: 30px;
+  }
 }
 table {
   background-color: white;

@@ -1,12 +1,10 @@
 {
-  "name": "grayscale",
-  "title": "Grayscale",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
-  "author": "Start Bootstrap",
+  "name": "random_diet_club",
+  "title": "Random Diet Club",
+  "version": "1.0",
+  "author": "Executive Machine",
   "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "type": "MIT"
   },
   "scripts": {
     "start": "gulp dev"
@@ -25,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+    "url": "https://github.com/maxhawkins/random_diet_club"
   }
 }

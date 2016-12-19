@@ -441,3 +441,26 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.btn-secondary-join {
+  position: relative;
+}
+.btn-secondary-join.loading .submit-text {
+  transition: opacity ease 0.5s;
+}
+.btn-secondary-join .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+.btn-secondary-join.loading .loader {
+  opacity: 1;
+}
+.btn-secondary-join.loading .submit-text {
+  opacity: 0;
+}

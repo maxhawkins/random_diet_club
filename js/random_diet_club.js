@@ -21,6 +21,69 @@ $(function() {
     });
 });
 
+
+// MailChimp subscribe form
+
+function submitForm($form) {
+    return $.ajax({
+        type: 'GET',
+        url: 'https://club.us14.list-manage.com/subscribe/post-json?c=?',
+        data: $form.serialize(),
+        cache: false,
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+    });
+}
+
+function onSubmitError(err) {
+    // show error below form
+}
+
+function onSubmitSuccess() {
+    // remove signup form and show success message
+}
+
+$(function() {
+    var $form = $('form');
+
+    $form.submit(function(e) {
+        e.preventDefault();
+
+        var $submit = $form.find('[type="submit"]')
+        $submit.addClass('loading');
+        $submit.attr('disabled', true);
+        console.log($submit);
+
+        submitForm($form)
+            .then(function(resp) {
+                $submit.removeClass('loading');
+                $submit.attr('disabled', false);
+
+                if (resp.result !== 'success') {
+                    onSubmitError(resp.msg);
+                    return;
+                }
+
+                onSubmitSuccess();
+            }, function(err) {
+                $submit.removeClass('loading');
+                $submit.attr('disabled', false);
+
+                onSubmitError('Send failed. Please try again.');
+            });
+    });
+});
+
+
+
+
+
+
+////////////
+// Physics Simulation
+////////////
+
+
 // module aliases
 var Engine = Matter.Engine,
     World = Matter.World,

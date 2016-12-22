@@ -1,3 +1,16 @@
+var logos = [
+    'img/pear.png'
+];
+
+var logo = document.getElementById("logo");
+var logoIdx = Math.floor(Math.random() * logos.length);
+logo.src = logos[logoIdx];
+
+APNG.ifNeeded().then(function() {
+
+    APNG.animateImage(logo);
+});
+
 var lastScrollY = 0;
 function updateScrollY() {
     lastScrollY = window.scrollY;

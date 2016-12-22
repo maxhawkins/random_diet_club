@@ -7,7 +7,6 @@ var logoIdx = Math.floor(Math.random() * logos.length);
 logo.src = logos[logoIdx];
 
 APNG.ifNeeded().then(function() {
-
     APNG.animateImage(logo);
 });
 
@@ -243,7 +242,7 @@ function trigger() {
 
         var forceScale = 11;
         if (document.body.offsetWidth < 500) {
-            forceScale = 3;
+            forceScale = 6;
         }
 
         var position = {

@@ -422,13 +422,13 @@ footer p {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: #9BBB34;
+  background: rgba(155, 187, 52, 0.4);
 }
 ::selection {
   text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: #9BBB34;
+  background: rgba(155, 187, 52, 0.4);
 }
 img::selection {
   background: transparent;
@@ -437,7 +437,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+  webkit-tap-highlight-color: rgba(155, 187, 52, 0.2);
   width: 100%;
   overflow-x: hidden;
 }

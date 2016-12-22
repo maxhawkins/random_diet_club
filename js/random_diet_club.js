@@ -37,8 +37,8 @@ function submitForm($form) {
 
 function showMessage(msg, msgType) {
   var $msgWrapper = $('#msg-wrapper'),
-      $msgContainer = $msgWrapper.find('span'),
-      msgClass = msgType === 'success' ? 'label-success' : 'label-error';
+      $msgContainer = $msgWrapper.find('.label'),
+      msgClass = msgType === 'success' ? 'label-primary' : 'label-error';
 
   $msgContainer.addClass(msgClass);
   $msgContainer.text(msg);
@@ -47,10 +47,10 @@ function showMessage(msg, msgType) {
 
 function clearMessage() {
   var $msgWrapper = $('#msg-wrapper'),
-      $msgContainer = $msgWrapper.find('span');
+      $msgContainer = $msgWrapper.find('.label');
 
   $msgWrapper.hide();
-  $msgContainer.removeClass('label-success label-error');
+  $msgContainer.removeClass('label-primary label-error');
   $msgContainer.text('');
 }
 
@@ -65,16 +65,14 @@ $(function() {
         var $submit = $form.find('[type="submit"]')
         $submit.addClass('loading');
         $submit.attr('disabled', true);
-        console.log($submit);
 
         submitForm($form)
             .then(function(resp) {
-                console.log('hi hi hi');
                 $submit.removeClass('loading');
                 $submit.attr('disabled', false);
 
                 if (resp.result === 'success') {
-                  var successMsg = "You're almost there! Please verify your email to complete your registration.";
+                  var successMsg = "Welcome to the club! Please verify your email to complete your registration.";
                   $form.hide();
                   showMessage(successMsg, resp.result);
                 }
@@ -83,7 +81,7 @@ $(function() {
                 }
 
             }, function(err) {
-                var errorMsg = 'Send failed. Please try again.'
+                var errorMsg = 'Send failed. Please try again.';
                 $submit.removeClass('loading');
                 $submit.attr('disabled', false);
                 showMessage(errorMsg, 'error');

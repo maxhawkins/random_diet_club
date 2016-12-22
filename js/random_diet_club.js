@@ -35,12 +35,23 @@ function submitForm($form) {
     });
 }
 
-function onSubmitError(err) {
-    // show error below form
+function showMessage(msg, msgType) {
+  var $msgWrapper = $('#msg-wrapper'),
+      $msgContainer = $msgWrapper.find('span'),
+      msgClass = msgType === 'success' ? 'label-success' : 'label-error';
+
+  $msgContainer.addClass(msgClass);
+  $msgContainer.text(msg);
+  $msgWrapper.show();
 }
 
-function onSubmitSuccess() {
-    // remove signup form and show success message
+function clearMessage() {
+  var $msgWrapper = $('#msg-wrapper'),
+      $msgContainer = $msgWrapper.find('span');
+
+  $msgWrapper.hide();
+  $msgContainer.removeClass('label-success label-error');
+  $msgContainer.text('');
 }
 
 $(function() {
@@ -49,6 +60,8 @@ $(function() {
     $form.submit(function(e) {
         e.preventDefault();
 
+        clearMessage();
+
         var $submit = $form.find('[type="submit"]')
         $submit.addClass('loading');
         $submit.attr('disabled', true);
@@ -56,20 +69,24 @@ $(function() {
 
         submitForm($form)
             .then(function(resp) {
+                console.log('hi hi hi');
                 $submit.removeClass('loading');
                 $submit.attr('disabled', false);
 
-                if (resp.result !== 'success') {
-                    onSubmitError(resp.msg);
-                    return;
+                if (resp.result === 'success') {
+                  var successMsg = "You're almost there! Please verify your email to complete your registration.";
+                  $form.hide();
+                  showMessage(successMsg, resp.result);
+                }
+                else {
+                  showMessage(resp.msg, resp.result);
                 }
 
-                onSubmitSuccess();
             }, function(err) {
+                var errorMsg = 'Send failed. Please try again.'
                 $submit.removeClass('loading');
                 $submit.attr('disabled', false);
-
-                onSubmitError('Send failed. Please try again.');
+                showMessage(errorMsg, 'error');
             });
     });
 });
@@ -226,4 +243,3 @@ $(window).scroll(function() {
     triggered = true;
     trigger();
 });
-

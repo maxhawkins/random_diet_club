@@ -59,6 +59,7 @@ function showMessage(msg, msgType) {
       msgClass = msgType === 'success' ? 'label-primary' : 'label-error';
 
   $msgContainer.addClass(msgClass);
+  $msgContainer.addClass('on');
   $msgContainer.text(msg);
   $msgWrapper.show();
 }
@@ -69,6 +70,7 @@ function clearMessage() {
 
   $msgWrapper.hide();
   $msgContainer.removeClass('label-primary label-error');
+  $msgContainer.removeClass('on');
   $msgContainer.text('');
 }
 

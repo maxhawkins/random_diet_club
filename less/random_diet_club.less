@@ -540,9 +540,21 @@ body {
   margin-bottom: 20px;
 
   .msg {
+    opacity: 0;
+    width: 120%;
+    margin-left: -10%;
+    padding: 20px;
+    background: rgba(249,245,236,.8);
+    color: black;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
     white-space: normal;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+    transition: opacity ease 0.5s;
+  }
+  .msg.on {
+    opacity: 1;
   }
 
 }

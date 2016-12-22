@@ -1,14 +1,19 @@
-// jQuery to collapse the navbar on scroll
+var lastScrollY = 0;
+function updateScrollY() {
+    lastScrollY = window.scrollY;
+}
+
+// called on RAF
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
+    if (lastScrollY > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 }
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+$(window).scroll(updateScrollY);
+$(document).ready(updateScrollY);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -16,7 +21,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 800, 'swing');
         event.preventDefault();
     });
 });
@@ -105,6 +110,7 @@ var Engine = Matter.Engine,
     Bodies = Matter.Bodies,
     Body = Matter.Body,
     Vector = Matter.Vector,
+    Runner = Matter.Runner,
     Composite = Matter.Composite;
 
 // create an engine
@@ -115,8 +121,9 @@ var images = [];
 
 var particles = document.getElementById('particles');
 var downloadSection = document.getElementById('download');
+var aboutSection = document.getElementById('about');
 
-var launchY = downloadSection.offsetTop;
+var launchY = downloadSection.offsetTop - aboutSection.offsetTop;
 
 var SRCS = [
     'img/basil.png',
@@ -131,7 +138,17 @@ var SRCS = [
 
 for (var i = 0; i < 20; i++) {
 
-    var body = Bodies.rectangle(-300 * 50, launchY * 50, 100, 100, {friction: 0, frictionAir: 0.008});
+    var body = Bodies.rectangle(
+        -300 * 50,
+        launchY * 50,
+        100,
+        100,
+        {
+            friction: 0,
+            frictionAir: 0.008,
+        });
+    body.isSensor = true;
+    body.collisionFilter.category = 2;
     bodies.push(body);
 
     var maxWidth = 200;
@@ -148,9 +165,6 @@ for (var i = 0; i < 20; i++) {
     var image = document.createElement('img');
     image.className = 'particle'
     image.src = src;
-    image.style.position = 'absolute';
-    image.style.left = 0;
-    image.style.top = 0;
     image.style.width = width + 'px';
     image.style.transform = 'translate(-9999, -9999)';
     particles.appendChild(image);
@@ -160,13 +174,23 @@ for (var i = 0; i < 20; i++) {
 engine.world.gravity.y = 0;
 World.add(engine.world, bodies);
 
+var runner = Runner.create();
 
-Engine.run(engine);
-
-function update(t) {
-    var bodies = Composite.allBodies(engine.world);
-
+function allSleeping(bodies) {
     var sleepingCount = 0;
+
+    for (var i = 0; i < bodies.length; i++) {
+        var body = bodies[i];
+
+        if (body.speed < 0.01 && body.angularSpeed < 0.01) {
+            sleepingCount++;
+        }
+    }
+
+    return sleepingCount == bodies.length;
+}
+
+function updateImages(bodies) {
     for (var i = 0; i < bodies.length; i++) {
         var body = bodies[i];
         var image = images[i];
@@ -174,20 +198,23 @@ function update(t) {
         var x = (body.position.x / 50);
         var y = (body.position.y / 50);
 
-        var tran = 'translate(' + x + 'px, ' + y + 'px) ' +
+        var tran = 'translate3d(' + x + 'px, ' + y + 'px, 0) ' +
             'rotate(' + body.angle + 'rad)';
 
         image.style.transform = tran;
+    }
+}
 
-        if (body.speed < 0.01 && body.angularSpeed < 0.01) {
-            sleepingCount++;
-        }
+function update(t) {
+    Runner.tick(runner, engine, 1000 / 60);
+
+    var bodies = Composite.allBodies(engine.world);
+
+    if (triggered && !allSleeping(bodies)) {
+        updateImages(bodies);
     }
 
-    if (triggered && sleepingCount == bodies.length) {
-        return; // stop animating after everything comes to a rest
-    }
-
+    collapseNavbar();
 
     window.requestAnimationFrame(update);
 }
@@ -225,6 +252,12 @@ function trigger() {
 
         Body.setPosition(body, position);
         Body.applyForce(body, origin, force);
+    }
+
+    update();
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].style.display = 'block';
     }
 }
 

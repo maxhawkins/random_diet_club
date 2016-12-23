@@ -415,7 +415,7 @@ ul.banner-social-buttons .btn {
   min-width: 170px;
 }
 footer {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 footer p {
   margin: 0;
@@ -515,4 +515,10 @@ body {
 .copyright a {
   color: #999;
   text-decoration: underline;
+}
+.disclaimer {
+  font-size: 14px;
+  color: #999;
+  max-width: 500px;
+  margin: 2em auto;
 }

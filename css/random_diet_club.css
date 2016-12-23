@@ -493,6 +493,9 @@ body {
 }
 .wordmark {
   float: left;
+  height: 74px;
+  position: relative;
+  bottom: 7px;
 }
 .particle {
   will-change: transform;

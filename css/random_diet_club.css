@@ -505,3 +505,12 @@ body {
 #particles {
   position: absolute;
 }
+.copyright {
+  margin-top: 2em;
+  font-size: 16px;
+  color: #999;
+}
+.copyright a {
+  color: #999;
+  text-decoration: underline;
+}

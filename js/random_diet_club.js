@@ -100,7 +100,7 @@ $(function() {
                 }
 
             }, function(err) {
-                var errorMsg = 'Send failed. Please try again.';
+                var errorMsg = 'Send failed. Please try again. ' + err;
                 $submit.removeClass('loading');
                 $submit.attr('disabled', false);
                 showMessage(errorMsg, 'error');

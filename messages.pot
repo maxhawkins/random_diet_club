@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-12-29 18:12-0600\n"
+"POT-Creation-Date: 2016-12-29 22:05-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,111 +17,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: templates/index.html:87
+#: templates/index.html:94
 msgid "Shake up your diet"
 msgstr ""
 
-#: templates/index.html:88
+#: templates/index.html:95
 msgid ""
 "The Random Diet Club is the best free way to discover what foods work for"
 " you"
 msgstr ""
 
-#: templates/index.html:99
+#: templates/index.html:106
 msgid "Join the Club"
 msgstr ""
 
-#: templates/index.html:120
+#: templates/index.html:127
 msgid "The World's First Randomized Diet"
 msgstr ""
 
-#: templates/index.html:121
+#: templates/index.html:128
 msgid ""
 "The bot knows best. Our proprietary dietary algorithm randomly eliminates"
 " a new food from your diet each week to help you reach nutritional "
 "nirvana."
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:129
 msgid ""
 "Join the Club to discover what food the bot will eliminate next. "
 "It&rsquo;s always a surprise!"
 msgstr ""
 
-#: templates/index.html:136
+#: templates/index.html:132
+msgid "COFFEE"
+msgstr ""
+
+#: templates/index.html:132
+msgid "NO"
+msgstr ""
+
+#: templates/index.html:132
+msgid "CHEESE"
+msgstr ""
+
+#: templates/index.html:132
+msgid "HALIBUT"
+msgstr ""
+
+#: templates/index.html:143
 msgid "Get a new food restriction in your inbox every Sunday"
 msgstr ""
 
-#: templates/index.html:137
+#: templates/index.html:144
 msgid ""
 "Each week, you’ll receive an email detailing which new food has been "
 "eliminated from your diet -- and that’s it. We won’t ever share your "
 "information or send you unnecessary emails."
 msgstr ""
 
-#: templates/index.html:142
+#: templates/index.html:149
 msgid "Once a Week"
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:152
 msgid "No Spam"
 msgstr ""
 
-#: templates/index.html:148
+#: templates/index.html:155
 msgid "Always Random"
 msgstr ""
 
-#: templates/index.html:167 templates/index.html:181 templates/index.html:195
-#: templates/index.html:209
+#: templates/index.html:174 templates/index.html:188 templates/index.html:202
+#: templates/index.html:216
 msgid "Random Diet Club"
 msgstr ""
 
-#: templates/index.html:170
+#: templates/index.html:177
 msgid "Don't Eat Soybeans"
 msgstr ""
 
-#: templates/index.html:184
+#: templates/index.html:191
 msgid "Chocolate is Banned"
 msgstr ""
 
-#: templates/index.html:198
+#: templates/index.html:205
 msgid "No Corn Allowed"
 msgstr ""
 
-#: templates/index.html:212
+#: templates/index.html:219
 msgid "No Milk Starting Now"
 msgstr ""
 
-#: templates/index.html:231
+#: templates/index.html:238
 msgid "Join the Random Diet Club Community"
 msgstr ""
 
-#: templates/index.html:232
+#: templates/index.html:239
 msgid ""
 "No one should diet alone. Join our Facebook group to connect with other "
 "Random Dieters, discuss the week’s random pick, and share your "
 "experiences."
 msgstr ""
 
-#: templates/index.html:233
+#: templates/index.html:240
 msgid ""
 "Follow us on Twitter to get updates and diet tips from our random dietary"
 " experts."
 msgstr ""
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Contact"
 msgstr ""
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Terms"
 msgstr ""
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Privacy Policy"
 msgstr ""
 
-#: templates/index.html:250
+#: templates/index.html:257
 msgid ""
 "The material on this web site is provided for educational purposes only "
 "and is not to be used for medical advice, diagnosis or treatment."

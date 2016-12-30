@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-12-29 18:12-0600\n"
+"POT-Creation-Date: 2016-12-29 22:05-0600\n"
 "PO-Revision-Date: 2016-12-29 18:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,113 +18,149 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: templates/index.html:87
+#: templates/index.html:94
 msgid "Shake up your diet"
 msgstr "Mezcle su dieta"
 
-#: templates/index.html:88
+#: templates/index.html:95
 msgid ""
 "The Random Diet Club is the best free way to discover what foods work for"
 " you"
-msgstr "Random Diet Club es el mejor modo gratis de descubrir qué alimentos le convienen."
+msgstr ""
+"Random Diet Club es el mejor modo gratis de descubrir qué alimentos le "
+"convienen."
 
-#: templates/index.html:99
+#: templates/index.html:106
 msgid "Join the Club"
 msgstr "Únase al club"
 
-#: templates/index.html:120
+#: templates/index.html:127
 msgid "The World's First Randomized Diet"
 msgstr "La primera dieta aleatoria del mundo"
 
-#: templates/index.html:121
+#: templates/index.html:128
 msgid ""
 "The bot knows best. Our proprietary dietary algorithm randomly eliminates"
 " a new food from your diet each week to help you reach nutritional "
 "nirvana."
-msgstr "El algoritmo lo sabe mejor. Nuestro algoritmo de dietas patentado elimina de forma aleatoria un nuevo alimento de su dieta cada semana para ayudarle a alcanzar la perfección nutricional."
+msgstr ""
+"El algoritmo lo sabe mejor. Nuestro algoritmo de dietas patentado elimina"
+" de forma aleatoria un nuevo alimento de su dieta cada semana para "
+"ayudarle a alcanzar la perfección nutricional."
 
-#: templates/index.html:122
+#: templates/index.html:129
 msgid ""
 "Join the Club to discover what food the bot will eliminate next. "
 "It&rsquo;s always a surprise!"
-msgstr "Únase al club para descubrir el próximo alimento que el algoritmo eliminará. ¡Siempre será una sorpresa!"
+msgstr ""
+"Únase al club para descubrir el próximo alimento que el algoritmo "
+"eliminará. ¡Siempre será una sorpresa!"
 
-#: templates/index.html:136
+#: templates/index.html:132
+msgid "COFFEE"
+msgstr "CAFÉ"
+
+#: templates/index.html:132
+msgid "NO"
+msgstr "SIN"
+
+#: templates/index.html:132
+msgid "CHEESE"
+msgstr "QUESO"
+
+#: templates/index.html:132
+msgid "HALIBUT"
+msgstr "FLETÁN"
+
+#: templates/index.html:143
 msgid "Get a new food restriction in your inbox every Sunday"
-msgstr "Reciba una nueva restricción de alimento en su bandeja de entrada cada domingo"
+msgstr ""
+"Reciba una nueva restricción de alimento en su bandeja de entrada cada "
+"domingo"
 
-#: templates/index.html:137
+#: templates/index.html:144
 msgid ""
 "Each week, you’ll receive an email detailing which new food has been "
 "eliminated from your diet -- and that’s it. We won’t ever share your "
 "information or send you unnecessary emails."
-msgstr "Cada semana, recibirá un correo electrónico que indicará que nuevo alimento se ha eliminado de su dieta, y eso es todo. Nunca compartiremos su información ni le enviaremos correos electrónicos innecesarios."
+msgstr ""
+"Cada semana, recibirá un correo electrónico que indicará que nuevo "
+"alimento se ha eliminado de su dieta, y eso es todo. Nunca compartiremos "
+"su información ni le enviaremos correos electrónicos innecesarios."
 
-#: templates/index.html:142
+#: templates/index.html:149
 msgid "Once a Week"
 msgstr "Una vez a la semana"
 
-#: templates/index.html:145
+#: templates/index.html:152
 msgid "No Spam"
 msgstr "Sin correo no deseado"
 
-#: templates/index.html:148
+#: templates/index.html:155
 msgid "Always Random"
 msgstr "Siempre aleatorio"
 
-#: templates/index.html:167 templates/index.html:181 templates/index.html:195
-#: templates/index.html:209
+#: templates/index.html:174 templates/index.html:188 templates/index.html:202
+#: templates/index.html:216
 msgid "Random Diet Club"
 msgstr "Random Diet Club"
 
-#: templates/index.html:170
+#: templates/index.html:177
 msgid "Don't Eat Soybeans"
 msgstr "No puede comer frijol de soja"
 
-#: templates/index.html:184
+#: templates/index.html:191
 msgid "Chocolate is Banned"
 msgstr "Prohibido el chocolate "
 
-#: templates/index.html:198
+#: templates/index.html:205
 msgid "No Corn Allowed"
 msgstr "No se permite el maíz"
 
-#: templates/index.html:212
+#: templates/index.html:219
 msgid "No Milk Starting Now"
 msgstr "No se toma leche a partir de ahora"
 
-#: templates/index.html:231
+#: templates/index.html:238
 msgid "Join the Random Diet Club Community"
 msgstr "Únase a la comunidad del Random Diet Club"
 
-#: templates/index.html:232
+#: templates/index.html:239
 msgid ""
 "No one should diet alone. Join our Facebook group to connect with other "
 "Random Dieters, discuss the week’s random pick, and share your "
 "experiences."
-msgstr "Nadie debe tener una dieta por sí solo. Únase a nuestro grupo de Facebook para conectarse con otros practicantes de la dieta aleatoria, hablar sobre la opción aleatoria de la semana y compartir sus experiencias."
+msgstr ""
+"Nadie debe tener una dieta por sí solo. Únase a nuestro grupo de Facebook"
+" para conectarse con otros practicantes de la dieta aleatoria, hablar "
+"sobre la opción aleatoria de la semana y compartir sus experiencias."
 
-#: templates/index.html:233
+#: templates/index.html:240
 msgid ""
 "Follow us on Twitter to get updates and diet tips from our random dietary"
 " experts."
-msgstr "Síganos en Twitter para recibir actualizaciones y sugerencias de dietas de nuestros expertos en dieta aleatoria."
+msgstr ""
+"Síganos en Twitter para recibir actualizaciones y sugerencias de dietas "
+"de nuestros expertos en dieta aleatoria."
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Contact"
 msgstr "Contacto"
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Terms"
 msgstr "Términos"
 
-#: templates/index.html:249
+#: templates/index.html:256
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
-#: templates/index.html:250
+#: templates/index.html:257
 msgid ""
 "The material on this web site is provided for educational purposes only "
 "and is not to be used for medical advice, diagnosis or treatment."
-msgstr "Los materiales de este sitio web se ofrecen solo para propósitos educacionales y no se deben usar para dar tratamiento, diagnóstico o consejo médico."
+msgstr ""
+"Los materiales de este sitio web se ofrecen solo para propósitos "
+"educacionales y no se deben usar para dar tratamiento, diagnóstico o "
+"consejo médico."
 

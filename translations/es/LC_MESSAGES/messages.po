@@ -26,105 +26,105 @@ msgstr "Mezcle su dieta"
 msgid ""
 "The Random Diet Club is the best free way to discover what foods work for"
 " you"
-msgstr "El Club de la Dieta Aleatoria es el mejor modo gratis de descubrir qué alimentos le convienen."
+msgstr "Random Diet Club es el mejor modo gratis de descubrir qué alimentos le convienen."
 
 #: templates/index.html:99
 msgid "Join the Club"
-msgstr ""
+msgstr "Únase al club"
 
 #: templates/index.html:120
 msgid "The World's First Randomized Diet"
-msgstr ""
+msgstr "La primera dieta aleatoria del mundo"
 
 #: templates/index.html:121
 msgid ""
 "The bot knows best. Our proprietary dietary algorithm randomly eliminates"
 " a new food from your diet each week to help you reach nutritional "
 "nirvana."
-msgstr ""
+msgstr "El algoritmo lo sabe mejor. Nuestro algoritmo de dietas patentado elimina de forma aleatoria un nuevo alimento de su dieta cada semana para ayudarle a alcanzar la perfección nutricional."
 
 #: templates/index.html:122
 msgid ""
 "Join the Club to discover what food the bot will eliminate next. "
 "It&rsquo;s always a surprise!"
-msgstr ""
+msgstr "Únase al club para descubrir el próximo alimento que el algoritmo eliminará. ¡Siempre será una sorpresa!"
 
 #: templates/index.html:136
 msgid "Get a new food restriction in your inbox every Sunday"
-msgstr ""
+msgstr "Reciba una nueva restricción de alimento en su bandeja de entrada cada domingo"
 
 #: templates/index.html:137
 msgid ""
 "Each week, you’ll receive an email detailing which new food has been "
 "eliminated from your diet -- and that’s it. We won’t ever share your "
 "information or send you unnecessary emails."
-msgstr ""
+msgstr "Cada semana, recibirá un correo electrónico que indicará que nuevo alimento se ha eliminado de su dieta, y eso es todo. Nunca compartiremos su información ni le enviaremos correos electrónicos innecesarios."
 
 #: templates/index.html:142
 msgid "Once a Week"
-msgstr ""
+msgstr "Una vez a la semana"
 
 #: templates/index.html:145
 msgid "No Spam"
-msgstr ""
+msgstr "Sin correo no deseado"
 
 #: templates/index.html:148
 msgid "Always Random"
-msgstr ""
+msgstr "Siempre aleatorio"
 
 #: templates/index.html:167 templates/index.html:181 templates/index.html:195
 #: templates/index.html:209
 msgid "Random Diet Club"
-msgstr ""
+msgstr "Random Diet Club"
 
 #: templates/index.html:170
 msgid "Don't Eat Soybeans"
-msgstr ""
+msgstr "No puede comer frijol de soja"
 
 #: templates/index.html:184
 msgid "Chocolate is Banned"
-msgstr ""
+msgstr "Prohibido el chocolate "
 
 #: templates/index.html:198
 msgid "No Corn Allowed"
-msgstr ""
+msgstr "No se permite el maíz"
 
 #: templates/index.html:212
 msgid "No Milk Starting Now"
-msgstr ""
+msgstr "No se toma leche a partir de ahora"
 
 #: templates/index.html:231
 msgid "Join the Random Diet Club Community"
-msgstr ""
+msgstr "Únase a la comunidad del Random Diet Club"
 
 #: templates/index.html:232
 msgid ""
 "No one should diet alone. Join our Facebook group to connect with other "
 "Random Dieters, discuss the week’s random pick, and share your "
 "experiences."
-msgstr ""
+msgstr "Nadie debe tener una dieta por sí solo. Únase a nuestro grupo de Facebook para conectarse con otros practicantes de la dieta aleatoria, hablar sobre la opción aleatoria de la semana y compartir sus experiencias."
 
 #: templates/index.html:233
 msgid ""
 "Follow us on Twitter to get updates and diet tips from our random dietary"
 " experts."
-msgstr ""
+msgstr "Síganos en Twitter para recibir actualizaciones y sugerencias de dietas de nuestros expertos en dieta aleatoria."
 
 #: templates/index.html:249
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #: templates/index.html:249
 msgid "Terms"
-msgstr ""
+msgstr "Términos"
 
 #: templates/index.html:249
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privacidad"
 
 #: templates/index.html:250
 msgid ""
 "The material on this web site is provided for educational purposes only "
 "and is not to be used for medical advice, diagnosis or treatment."
-msgstr ""
+msgstr "Los materiales de este sitio web se ofrecen solo para propósitos educacionales y no se deben usar para dar tratamiento, diagnóstico o consejo médico."
 

@@ -7,7 +7,7 @@
     "type": "MIT"
   },
   "scripts": {
-    "start": "gulp dev"
+    "start": "gulp watch"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Random Diet Club randomized elimination diet is the best free way to discover what foods work for you.">
+
+    <meta property="og:url"                content="https://randomdiet.club" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Random Diet Club" />
+    <meta property="og:description"        content="The Random Diet Club randomized elimination diet is the best free way to discover what foods work for you. Join the Club to discover what food the bot will eliminate next. It's always a surprise!" />
+    <meta property="og:image"              content="https://randomdiet.club/img/random-diet-club2.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@randomdiet">
+    <meta name="twitter:title" content="Random Diet Club">
+    <meta name="twitter:description" content="The Random Diet Club randomized elimination diet is the best free way to discover what foods work for you.">
+    <meta name="twitter:image" content="https://randomdiet.club/img/random-diet-club-twitter.jpg">
+    <meta name="google-site-verification" content="Q4I44jirxkkSyOhNX4GUZw7nxeBeArGDKuFpbZb_r14" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>Random Diet Club</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/random_diet_club.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <img src="img/circle.png" class="logo" id="logo">
+                  <img src="img/randomdietnodropshadow.png" class="wordmark" alt="Random Diet Club">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">
+                          <button class="btn btn-join" type="button" name="button">
+                            Join the Club
+                          </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">{% trans %}Shake up your diet{% endtrans %}</h1>
+                        <p class="intro-text">{% trans %}The Random Diet Club is the best free way to discover what foods work for you{% endtrans %}
+                        </p>
+                        <form action="https://club.us14.list-manage.com/subscribe" method="post" target="_blank" novalidate>
+                          <input type="hidden" name="u" value="5e4c4e3c415816e0e6ab77fc4">
+                          <input type="hidden" name="id" value="b2dca02ac8">
+                          <input type="hidden" name="b_5e4c4e3c415816e0e6ab77fc4_b2dca02ac8" value="">
+                          <input type="hidden" name="LOCALE" value="{{ g.locale }}">
+                          <div class="input-group input-group-email">
+                            <input type="email" name="EMAIL" class="form-control input-email" placeholder="Your Email">
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn-secondary btn-secondary-join">
+                                <span class="submit-text">{% trans %}Join the Club{% endtrans %}</span>
+                                <img src="img/loading.svg" alt="loading" class="loader">
+                              </button>
+                            </span>
+                          </div>
+                        </form>
+                        <div id="msg-wrapper">
+                          <span class="label msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="particles"></div>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section">
+        <div class="row">
+            <div class="col-sm-6 about-main">
+                <h2 class="text-center">{% trans %}The World's First Randomized Diet{% endtrans %}</h2>
+                <p>{% trans %}The bot knows best. Our proprietary dietary algorithm randomly eliminates a new food from your diet each week to help you reach nutritional nirvana.{% endtrans %}</p>
+                <p>{% trans %}Join the Club to discover what food the bot will eliminate next. It&rsquo;s always a surprise!{% endtrans %}</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-2 text-center">
+              <img width="300" src="img/example_banned_foods.svg" alt="example banned foods" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section">
+        <div class="download-section">
+            <div class="container">
+              <div class="row">
+                <div class="inbox-main col-sm-6">
+                    <h2 class="text-center">{% trans %}Get a new food restriction in your inbox every Sunday{% endtrans %}</h2>
+                    <p>{% trans %}Each week, you’ll receive an email detailing which new food has been eliminated from your diet -- and that’s it. We won’t ever share your information or send you unnecessary emails.{% endtrans %}</p>
+                </div>
+                <div class="inbox-main col-sm-5 col-sm-offset-1">
+                  <div class="checkmark-wrapper-wrapper">
+                    <div class="checkmark-wrapper">
+                      <img class="checkmark" src="img/checkmark.png" alt="" /> {% trans %}Once a Week{% endtrans %}
+                    </div>
+                    <div class="checkmark-wrapper">
+                      <img class="checkmark" src="img/checkmark.png" alt="" /> {% trans %}No Spam{% endtrans %}
+                    </div>
+                    <div class="checkmark-wrapper">
+                      <img class="checkmark" src="img/checkmark.png" alt="" /> {% trans %}Always Random{% endtrans %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container email-display">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <td colspan="4">
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="email-row">
+                      <td class="email-checkbox">
+                        <input type="checkbox" name="name" value="">
+                      </td>
+                      <td class="sender">
+                        {% trans %}Random Diet Club{% endtrans %}
+                      </td>
+                      <td class="subject">
+                        {% trans %}Don't Eat Soybeans{% endtrans %}
+                      </td>
+                      <td class="date">
+                        10:30 AM
+                      </td>
+                    </tr>
+                    <tr class="email-row">
+                      <td class="email-checkbox">
+                        <input type="checkbox" name="name" value="">
+                      </td>
+                      <td class="sender">
+                        {% trans %}Random Diet Club{% endtrans %}
+                      </td>
+                      <td class="subject">
+                        {% trans %}Chocolate is Banned{% endtrans %}
+                      </td>
+                      <td class="date">
+                        Dec 11
+                      </td>
+                    </tr>
+                    <tr class="email-row">
+                      <td class="email-checkbox">
+                        <input type="checkbox" name="name" value="">
+                      </td>
+                      <td class="sender">
+                        {% trans %}Random Diet Club{% endtrans %}
+                      </td>
+                      <td class="subject">
+                        {% trans %}No Corn Allowed{% endtrans %}
+                      </td>
+                      <td class="date">
+                        Dec 4
+                      </td>
+                    </tr>
+                    <tr class="email-row">
+                      <td class="email-checkbox">
+                        <input type="checkbox" name="name" value="">
+                      </td>
+                      <td class="sender">
+                        {% trans %}Random Diet Club{% endtrans %}
+                      </td>
+                      <td class="subject">
+                        {% trans %}No Milk Starting Now{% endtrans %}
+                      </td>
+                      <td class="date">
+                        Nov 27
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="food-img"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>{% trans %}Join the Random Diet Club Community{% endtrans %}</h2>
+                <p>{% trans %}No one should diet alone. Join our Facebook group to connect with other Random Dieters, discuss the week’s random pick, and share your experiences.{% endtrans %}</p>
+                <p>{% trans %}Follow us on Twitter to get updates and diet tips from our random dietary experts.{% endtrans %}</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/randomdiet" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/randomdietclub" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p><a target="_blank" href="mailto:info@randomdiet.club">{% trans %}Contact{% endtrans %}</a> &nbsp;&middot;&nbsp; <a href="terms.html">{% trans %}Terms{% endtrans %}</a> &nbsp;&middot;&nbsp; <a href="terms.html">{% trans %}Privacy Policy{% endtrans %}</a></p>
+            <p class="disclaimer">{% trans %}The material on this web site is provided for educational purposes only and is not to be used for medical advice, diagnosis or treatment.{% endtrans %}</p>
+            <p class="copyright">Copyright &copy; <a href="http://www.executivemachine.co">Executive Machine</a> 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="vendor/matter.min.js"></script>
+    <script src="vendor/apng-canvas.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/random_diet_club.min.js"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89406110-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+    <script src="https://cdn.ravenjs.com/3.9.1/raven.min.js"></script>
+    <script>
+      Raven.config('https://28d2b0cbf3eb467ab1dea0687eeac15f@sentry.io/124464').install()
+    </script>
+
+</body>
+
+</html>

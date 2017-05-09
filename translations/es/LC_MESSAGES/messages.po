@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-12-29 22:29-0600\n"
+"POT-Creation-Date: 2016-12-29 22:37-0600\n"
 "PO-Revision-Date: 2016-12-29 18:13-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -22,7 +22,8 @@ msgstr ""
 msgid ""
 "The Random Diet Club randomized elimination diet is the best free way to "
 "discover what foods work for you."
-msgstr "Random Diet Club es el mejor modo gratis de descubrir qué alimentos le "
+msgstr ""
+"Random Diet Club es el mejor modo gratis de descubrir qué alimentos le "
 "convienen."
 
 #: templates/index.html:20 templates/index.html:25 templates/index.html:32
@@ -36,7 +37,8 @@ msgid ""
 "The Random Diet Club randomized elimination diet is the best free way to "
 "discover what foods work for you. Join the Club to discover what food the"
 " bot will eliminate next. It's always a surprise!"
-msgstr "Random Diet Club es el mejor modo gratis de descubrir qué alimentos le "
+msgstr ""
+"Random Diet Club es el mejor modo gratis de descubrir qué alimentos le "
 "convienen."
 
 #: templates/index.html:76 templates/index.html:105
@@ -183,4 +185,8 @@ msgstr ""
 "Los materiales de este sitio web se ofrecen solo para propósitos "
 "educacionales y no se deben usar para dar tratamiento, diagnóstico o "
 "consejo médico."
+
+#: templates/index.html:257
+msgid "Copyright &copy;"
+msgstr "&copy;"
 

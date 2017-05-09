@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-12-29 22:29-0600\n"
+"POT-Creation-Date: 2016-12-29 22:37-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,5 +159,9 @@ msgstr ""
 msgid ""
 "The material on this web site is provided for educational purposes only "
 "and is not to be used for medical advice, diagnosis or treatment."
+msgstr ""
+
+#: templates/index.html:257
+msgid "Copyright &copy;"
 msgstr ""
 
